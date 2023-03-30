@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(80, 41, 41);
+  height: 100vh;
+}
+
+.formats {
+  display: block;
+  background-color: brown;
+  width: 150px;
+  padding: 10px 20px;
+}
+
+footer {
+  background-color: black;
+  width: 100vw;
+  height: 400px;
+}

@@ -13,11 +13,11 @@ def get_keywords():
 
   prompts = story.prompts
 
-  return render_template('base.html', prompts=prompts)
+  return render_template('keywords.html', prompts=prompts)
 
 @app.route('/story')
 def render_story():
   
   context = story.generate(request.args)
-
+  
   return render_template("story.html", context=context)

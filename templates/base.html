@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Madlibs</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/app.css" />
+    <title>Document</title>
   </head>
   <body>
-    <h1>Madlibs</h1>
-    <form action="/story">
-      {% for prompt in prompts %}
-      <p>
-        {{ prompt }}:
-        <input name="{{ prompt }}" />
-      </p>
-      {% endfor %}
-      <button>Submit</button>
-    </form>
+    <nav>
+      <ul>
+        <li class="formats"><a href="/story">Template 1</a></li>
+      </ul>
+    </nav>
+    <main>{% block content %}{% endblock %}</main>
+    <footer>This is a footer</footer>
   </body>
 </html>
